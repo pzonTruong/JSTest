@@ -3,37 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Admin Dashboard</title>
     <link rel="stylesheet" href="index.css">
 </head>
+<body>
 
 <h1>Admin Dashboard</h1>
-<button>Add data</button>
 
+<button id="addDataBtn">Add Data</button>
 
-<div class = "container" id = 'pop-up'>
-    <h2>Add data</h2>
-    <form>
-        
-        <input type="text" id="iname" name="iname"> <br>
-        
-        <input type="number" id="iprice" name="iprice"> <br>
-       
-        <input type="text" id="idesc" name="idesc"> <br>
-       
-        <input type="file" id="file" name="file"> <br>
+<h2>Product List</h2>
+<img id="placeholder" src="./image/ItemNotFound.png" alt="No products available">
+<div id="productContainer"></div>
 
-        <input type="submit" id="add">
-    </form>
-
+<!-- Add Product Modal -->
+<div id="addProductModal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Add Product</h2>
+        <form id="productForm">
+            
+            <input placeholder = "Name" type="text" id="name" name="name" required><br>
+            
+            <input placeholder = "Price" type="number" id="price" name="price" required><br>
+           
+            <textarea placeholder = "Desc" id="description" name="description" required></textarea><br>
+            
+            <input type="file" id="image" name="image" accept="image/*" required><br><br>
+            <input type="submit" value="Add Product">
+        </form>
+        <button class="close-btn" id="closeModalBtn">Close</button>
+    </div>
 </div>
 
-
-<body>
-    
-    <img id = "notFound" src="./image/ItemNotFound.jpeg" alt="noItem">
-    <div id = "show"></div>
+<script src="./script/script.js"></script>
+<script src="./script/code.js"></script>
 </body>
-
-    <script src="./code.js"></script>
 </html>

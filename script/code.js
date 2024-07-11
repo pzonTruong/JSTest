@@ -66,11 +66,3 @@ console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5]))
 console.log(removeDuplicates(['a', 'b', 'a', 'c', 'b']))
 
 
-
-//Phan 2 here
-
-if (localStorage.length === 0) {
-        document.getElementById('notFound').style.visibility = 'show';
-  } else {
-        document.getElementById('notFound').style.visibility = 'hidden';
-}
