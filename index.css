@@ -113,3 +113,45 @@ h1, h2 {
 .close-btn:hover {
     background-color: #d32f2f;
 }
+
+.image-setting{
+    height: 100px;
+    width: 100px;
+}
+
+.edit-btn{
+    color:white !important;
+    background-color: green !important;
+    border: 2px solid green !important;
+    border-radius: 25px;
+    font-size: 14px;
+}
+    
+.del-btn{
+    color: rgb(255, 255, 255) !important;
+    background-color: red !important;
+    border: 2px solid red;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+.input-modal{
+    width:85%;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 20px;
+}
+
+.input-modal-desc{
+    width:85%;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.add-btn{
+    color:white !important;
+    background-color: rgba(0, 255, 255, 0.644) !important;
+    border: 2px solid rgba(0, 255, 255, 0.719) !important;
+    border-radius: 10px;
+    font-size: 14px;
+}

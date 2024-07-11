@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const addDataBtn = document.getElementById('addDataBtn');
     const addProductModal = document.getElementById('addProductModal');
     const closeModalBtn = document.querySelector('.close');
-    const closeModalButton = document.getElementById('closeModalBtn');
     const productForm = document.getElementById('productForm');
     const productContainer = document.getElementById('productContainer');
     const placeholderImage = document.getElementById('placeholder');
@@ -80,10 +79,10 @@ document.addEventListener('DOMContentLoaded', () => {
             <h3>${product.name}</h3>
             <p>Price: ${product.price}</p>
             <p>${product.description}</p>
-            <img src="${product.imageBase64}" alt="${product.name}">
+            <img class = "image-setting" src="${product.imageBase64}" alt="${product.name}">
             <br>
-            <button onclick="editProduct(this)">Edit</button>
-            <button onclick="deleteProduct(this)">Delete</button>
+            <button class = "edit-btn" onclick="editProduct(this)">Edit</button>
+            <button class = "del-btn" onclick="deleteProduct(this)">Delete</button>
         `;
 
         productContainer.appendChild(productBlock);
