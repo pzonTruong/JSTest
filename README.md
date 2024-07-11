@@ -6,6 +6,8 @@
     I don't like Js and web. 
     - Pzon
 
+    I do what I can but I'll make it better
+
 ## Link 
 https://github.com/pzonTruong/JSTest
 
